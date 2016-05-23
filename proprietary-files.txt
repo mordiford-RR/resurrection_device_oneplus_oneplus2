@@ -376,6 +376,12 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
+# Network
+-priv-app/QtiTetherService/QtiTetherService.apk
+vendor/lib/libconnctrl.so
+vendor/lib64/libconnctrl.so
+vendor/lib64/libQtiTether.so
+
 # Perf
 bin/energy-awareness
 bin/msm_irqbalance
