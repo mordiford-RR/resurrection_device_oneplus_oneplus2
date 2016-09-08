@@ -70,10 +70,23 @@ ro.pip.gated=0
 
 # Graphics
 persist.hwc.mdpcomp.enable=true
-dalvik.vm.heapsize=36m
 ro.qualcomm.cabl=0
 ro.sf.lcd_density=390
 ro.opengles.version=196609
+
+# Dalvik props
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
+# Data modules
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+persist.data.mode=concurrent
+ro.data.large_tcp_window_size=true
 
 # Camera
 persist.camera.cpp.duplication=false
@@ -110,6 +123,18 @@ ro.ril.hsxpa=3
 # Use Google DNS for faster DNS resolution
 net.dns1=8.8.8.8
 net.dns2=8.8.4.4
+
+# HWUI
+ro.hwui.texture_cache_size=96
+ro.hwui.layer_cache_size=64
+ro.hwui.path_cache_size=39
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=7
+ro.hwui.r_buffer_cache_size=12
+ro.hwui.text_small_cache_width=2048
+ro.hwui.text_small_cache_height=2048
+ro.hwui.text_large_cache_width=3072
+ro.hwui.text_large_cache_height=4096
 
 # Faster boot
 dalvik.vm.dexopt-flags=o=v,
